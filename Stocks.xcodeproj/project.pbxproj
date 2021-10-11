@@ -3,27 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4C20D97A26DF509500B375D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D97926DF509500B375D7 /* AppDelegate.swift */; };
 		4C20D97C26DF509500B375D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D97B26DF509500B375D7 /* SceneDelegate.swift */; };
-		4C20D97E26DF509500B375D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D97D26DF509500B375D7 /* ViewController.swift */; };
-		4C20D98126DF509500B375D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C20D97F26DF509500B375D7 /* Main.storyboard */; };
+		4C20D97E26DF509500B375D7 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D97D26DF509500B375D7 /* WatchListViewController.swift */; };
 		4C20D98326DF509C00B375D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C20D98226DF509C00B375D7 /* Assets.xcassets */; };
 		4C20D98626DF509C00B375D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C20D98426DF509C00B375D7 /* LaunchScreen.storyboard */; };
+		4C20D99626DF52DA00B375D7 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D99526DF52DA00B375D7 /* NewsViewController.swift */; };
+		4C20D99926DF52FD00B375D7 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D99826DF52FD00B375D7 /* SearchResultsViewController.swift */; };
+		4C20D99C26DF531700B375D7 /* StockDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D99B26DF531700B375D7 /* StockDetailsViewController.swift */; };
+		4C20D9A026DF57AB00B375D7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D99F26DF57AB00B375D7 /* APICaller.swift */; };
+		4C20D9A326DF57D600B375D7 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D9A226DF57D600B375D7 /* PersistenceManager.swift */; };
+		4C20D9A626DF581600B375D7 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D9A526DF581600B375D7 /* HapticsManager.swift */; };
+		4C20D9A926E0BAC600B375D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D9A826E0BAC600B375D7 /* Extensions.swift */; };
+		4C20D9AC26E0C4F400B375D7 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20D9AB26E0C4F400B375D7 /* SearchResultTableViewCell.swift */; };
+		4C5B5BBB26FF17AC00A94A76 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BBA26FF17AC00A94A76 /* SearchResponse.swift */; };
+		4C5B5BC3270340BD00A94A76 /* NewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BC2270340BD00A94A76 /* NewsHeaderView.swift */; };
+		4C5B5BC627045F2300A94A76 /* NewsStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BC527045F2300A94A76 /* NewsStory.swift */; };
+		4C5B5BC9270477BA00A94A76 /* NewsStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BC8270477BA00A94A76 /* NewsStoryTableViewCell.swift */; };
+		4C5B5BD02707098200A94A76 /* MarketDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BCF2707098200A94A76 /* MarketDataResponse.swift */; };
+		4C5B5BD3270B0BC200A94A76 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BD2270B0BC200A94A76 /* WatchListTableViewCell.swift */; };
+		4C5B5BD6270B157D00A94A76 /* StockChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BD5270B157D00A94A76 /* StockChartView.swift */; };
+		4C5B5BD9270EF82900A94A76 /* FinancialMetricsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BD8270EF82900A94A76 /* FinancialMetricsResponse.swift */; };
+		4C5B5BDC270F20E000A94A76 /* StockDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BDB270F20E000A94A76 /* StockDetailHeaderView.swift */; };
+		4C5B5BE427101DA000A94A76 /* MetricCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5BE327101DA000A94A76 /* MetricCollectionViewCell.swift */; };
+		E6ADDED743C728B811EBDEEF /* Pods_Stocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA8304080684AC35DF563D1 /* Pods_Stocks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AC056E7AAC078B11A8ACB7E /* Pods-Stocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks.debug.xcconfig"; path = "Target Support Files/Pods-Stocks/Pods-Stocks.debug.xcconfig"; sourceTree = "<group>"; };
 		4C20D97626DF509500B375D7 /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C20D97926DF509500B375D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C20D97B26DF509500B375D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C20D97D26DF509500B375D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C20D98026DF509500B375D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C20D97D26DF509500B375D7 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		4C20D98226DF509C00B375D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C20D98526DF509C00B375D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C20D98726DF509C00B375D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C20D99526DF52DA00B375D7 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		4C20D99826DF52FD00B375D7 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		4C20D99B26DF531700B375D7 /* StockDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewController.swift; sourceTree = "<group>"; };
+		4C20D99F26DF57AB00B375D7 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		4C20D9A226DF57D600B375D7 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		4C20D9A526DF581600B375D7 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		4C20D9A826E0BAC600B375D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4C20D9AB26E0C4F400B375D7 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		4C5B5BBA26FF17AC00A94A76 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		4C5B5BC2270340BD00A94A76 /* NewsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeaderView.swift; sourceTree = "<group>"; };
+		4C5B5BC527045F2300A94A76 /* NewsStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStory.swift; sourceTree = "<group>"; };
+		4C5B5BC8270477BA00A94A76 /* NewsStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStoryTableViewCell.swift; sourceTree = "<group>"; };
+		4C5B5BCF2707098200A94A76 /* MarketDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataResponse.swift; sourceTree = "<group>"; };
+		4C5B5BD2270B0BC200A94A76 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
+		4C5B5BD5270B157D00A94A76 /* StockChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockChartView.swift; sourceTree = "<group>"; };
+		4C5B5BD8270EF82900A94A76 /* FinancialMetricsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialMetricsResponse.swift; sourceTree = "<group>"; };
+		4C5B5BDB270F20E000A94A76 /* StockDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailHeaderView.swift; sourceTree = "<group>"; };
+		4C5B5BE327101DA000A94A76 /* MetricCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCollectionViewCell.swift; sourceTree = "<group>"; };
+		8AA8304080684AC35DF563D1 /* Pods_Stocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12765D528229B283075F62F /* Pods-Stocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks.release.xcconfig"; path = "Target Support Files/Pods-Stocks/Pods-Stocks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6ADDED743C728B811EBDEEF /* Pods_Stocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D935F7B8B5806C639616D06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AC056E7AAC078B11A8ACB7E /* Pods-Stocks.debug.xcconfig */,
+				E12765D528229B283075F62F /* Pods-Stocks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4C20D96D26DF509500B375D7 = {
 			isa = PBXGroup;
 			children = (
 				4C20D97826DF509500B375D7 /* Stocks */,
 				4C20D97726DF509500B375D7 /* Products */,
+				1D935F7B8B5806C639616D06 /* Pods */,
+				645ECE3D6D8609BC92B6D3B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +106,80 @@
 		4C20D97826DF509500B375D7 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
-				4C20D97926DF509500B375D7 /* AppDelegate.swift */,
-				4C20D97B26DF509500B375D7 /* SceneDelegate.swift */,
-				4C20D97D26DF509500B375D7 /* ViewController.swift */,
-				4C20D97F26DF509500B375D7 /* Main.storyboard */,
-				4C20D98226DF509C00B375D7 /* Assets.xcassets */,
-				4C20D98426DF509C00B375D7 /* LaunchScreen.storyboard */,
+				4C20D99326DF516B00B375D7 /* Other */,
+				4C20D99226DF516300B375D7 /* Managers */,
+				4C20D99126DF512600B375D7 /* Controllers */,
+				4C20D98E26DF510800B375D7 /* Views */,
+				4C20D99026DF511700B375D7 /* Models */,
 				4C20D98726DF509C00B375D7 /* Info.plist */,
 			);
 			path = Stocks;
+			sourceTree = "<group>";
+		};
+		4C20D98E26DF510800B375D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C20D9AB26E0C4F400B375D7 /* SearchResultTableViewCell.swift */,
+				4C5B5BC2270340BD00A94A76 /* NewsHeaderView.swift */,
+				4C5B5BC8270477BA00A94A76 /* NewsStoryTableViewCell.swift */,
+				4C5B5BD2270B0BC200A94A76 /* WatchListTableViewCell.swift */,
+				4C5B5BD5270B157D00A94A76 /* StockChartView.swift */,
+				4C5B5BDB270F20E000A94A76 /* StockDetailHeaderView.swift */,
+				4C5B5BE327101DA000A94A76 /* MetricCollectionViewCell.swift */,
+				4C20D98426DF509C00B375D7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C20D99026DF511700B375D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C5B5BBA26FF17AC00A94A76 /* SearchResponse.swift */,
+				4C5B5BC527045F2300A94A76 /* NewsStory.swift */,
+				4C5B5BCF2707098200A94A76 /* MarketDataResponse.swift */,
+				4C5B5BD8270EF82900A94A76 /* FinancialMetricsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C20D99126DF512600B375D7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C20D97D26DF509500B375D7 /* WatchListViewController.swift */,
+				4C20D99526DF52DA00B375D7 /* NewsViewController.swift */,
+				4C20D99826DF52FD00B375D7 /* SearchResultsViewController.swift */,
+				4C20D99B26DF531700B375D7 /* StockDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4C20D99226DF516300B375D7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4C20D99F26DF57AB00B375D7 /* APICaller.swift */,
+				4C20D9A226DF57D600B375D7 /* PersistenceManager.swift */,
+				4C20D9A526DF581600B375D7 /* HapticsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4C20D99326DF516B00B375D7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4C20D98226DF509C00B375D7 /* Assets.xcassets */,
+				4C20D97926DF509500B375D7 /* AppDelegate.swift */,
+				4C20D97B26DF509500B375D7 /* SceneDelegate.swift */,
+				4C20D9A826E0BAC600B375D7 /* Extensions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		645ECE3D6D8609BC92B6D3B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA8304080684AC35DF563D1 /* Pods_Stocks.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C20D98A26DF509C00B375D7 /* Build configuration list for PBXNativeTarget "Stocks" */;
 			buildPhases = (
+				2A0F5AB5054ADDD4879D8645 /* [CP] Check Pods Manifest.lock */,
 				4C20D97226DF509500B375D7 /* Sources */,
 				4C20D97326DF509500B375D7 /* Frameworks */,
 				4C20D97426DF509500B375D7 /* Resources */,
+				0B329EB7EB00CFBAD401FCFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +243,85 @@
 			files = (
 				4C20D98626DF509C00B375D7 /* LaunchScreen.storyboard in Resources */,
 				4C20D98326DF509C00B375D7 /* Assets.xcassets in Resources */,
-				4C20D98126DF509500B375D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B329EB7EB00CFBAD401FCFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stocks/Pods-Stocks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stocks/Pods-Stocks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stocks/Pods-Stocks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A0F5AB5054ADDD4879D8645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stocks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C20D97226DF509500B375D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C20D97E26DF509500B375D7 /* ViewController.swift in Sources */,
+				4C5B5BD02707098200A94A76 /* MarketDataResponse.swift in Sources */,
+				4C20D9A626DF581600B375D7 /* HapticsManager.swift in Sources */,
+				4C5B5BE427101DA000A94A76 /* MetricCollectionViewCell.swift in Sources */,
+				4C20D9AC26E0C4F400B375D7 /* SearchResultTableViewCell.swift in Sources */,
+				4C20D99C26DF531700B375D7 /* StockDetailsViewController.swift in Sources */,
+				4C20D97E26DF509500B375D7 /* WatchListViewController.swift in Sources */,
+				4C5B5BD9270EF82900A94A76 /* FinancialMetricsResponse.swift in Sources */,
+				4C20D99626DF52DA00B375D7 /* NewsViewController.swift in Sources */,
+				4C20D9A326DF57D600B375D7 /* PersistenceManager.swift in Sources */,
+				4C5B5BC627045F2300A94A76 /* NewsStory.swift in Sources */,
+				4C20D9A926E0BAC600B375D7 /* Extensions.swift in Sources */,
+				4C5B5BC9270477BA00A94A76 /* NewsStoryTableViewCell.swift in Sources */,
+				4C5B5BD6270B157D00A94A76 /* StockChartView.swift in Sources */,
+				4C20D9A026DF57AB00B375D7 /* APICaller.swift in Sources */,
+				4C5B5BBB26FF17AC00A94A76 /* SearchResponse.swift in Sources */,
+				4C5B5BC3270340BD00A94A76 /* NewsHeaderView.swift in Sources */,
 				4C20D97A26DF509500B375D7 /* AppDelegate.swift in Sources */,
 				4C20D97C26DF509500B375D7 /* SceneDelegate.swift in Sources */,
+				4C5B5BDC270F20E000A94A76 /* StockDetailHeaderView.swift in Sources */,
+				4C5B5BD3270B0BC200A94A76 /* WatchListTableViewCell.swift in Sources */,
+				4C20D99926DF52FD00B375D7 /* SearchResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4C20D97F26DF509500B375D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C20D98026DF509500B375D7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4C20D98426DF509C00B375D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +451,14 @@
 		};
 		4C20D98B26DF509C00B375D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC056E7AAC078B11A8ACB7E /* Pods-Stocks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNMM6MB5J4;
 				INFOPLIST_FILE = Stocks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +466,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariakramer.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4C20D98C26DF509C00B375D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12765D528229B283075F62F /* Pods-Stocks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNMM6MB5J4;
 				INFOPLIST_FILE = Stocks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariakramer.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
