@@ -36,9 +36,7 @@ final class SearchResultsViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        // layout our table view(расположить)
         super.viewDidLayoutSubviews()
-        //use it to match the entirety of the bounds (на всю границу разместить)
         tableView.frame = view.bounds
     }
     
